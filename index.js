@@ -8,19 +8,19 @@ app.get('/', (req, res) => {
 app.get('/fibonacci/:number', function(req, res) {
     console.log(req.params.number);
     var a = 1;
-    b=0;
+    var total=0;
     var temp;
     var num = req.params.number;
     if(Math.sign(num) == 1) {
         var promise = new Promise ((resolve, reject) => {
             while(num-1 > 0) {
                 temp= a;
-                a+= b;
-                b = temp;
+                a+= total;
+                total = temp;
                 num-= 1;
-                console.log(b);
+                console.log(total);
             }
-            res.send({number:b});
+            res.send({"number":total});
         });
     } else {
         res.send('solo se aceptan numeros positivos sin incluis el 0');
