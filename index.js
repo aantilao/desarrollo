@@ -23,7 +23,7 @@ app.get('/fibonacci/:number', function(req, res) {
             res.send({"number":total});
         });
     } else {
-        res.send('solo se aceptan numeros positivos sin incluis el 0');
+        res.send({error:'solo se aceptan numeros positivos sin incluis el 0'});
     }
     
 });
