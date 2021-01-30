@@ -1,5 +1,6 @@
 "# desarrollo"
-Toda la informacion esta package.json (framework utilizado).
+Toda la informacion esta package.json.
+
 Se tomo en consideración el siguiente supuesto:
     -secuencia fibonacci: 0,1,1,2,3,5...
     -por lo que la posicion 1 retornara un 0
