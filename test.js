@@ -38,3 +38,14 @@ describe('obtener n-esimo', () => {
         });
     })
 });
+describe('obtener n-esimo', () => {
+    it('El numero deberia ser', (done) => {
+        chai.request(url)
+        .get('/15')
+        .end(function(err,res) {
+            console.log(res.body)
+            expect(res).to.have.status(200);
+            done();
+        });
+    })
+});
