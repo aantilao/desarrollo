@@ -12,3 +12,5 @@ Solo Acepta numeros positivos, en caso de que sea un strin o numero negativo ret
 
 Para iniciarl el servidor solo se necesita utilizar el siguiente comando.
     npm start
+Para visualizar los test utilizar el comando: 
+    npm test
