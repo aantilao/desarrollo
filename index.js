@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('PORFAVOR INGRESAR A: localhost:3000//fibonacci/numero')
 })
 app.get('/fibonacci/:number', function(req, res) {
     console.log(req.params.number);
